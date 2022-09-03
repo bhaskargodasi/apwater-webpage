@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>apwrims</title>
+    <script src="https://kit.fontawesome.com/27609803cc.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <div class="logo">
+          <div class="dropdown">
+          <!-- <button onclick="myFunction1()" class="dropbtn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Reservoirs</a>
+          <a href="#">MI Tanks</a>
+          <a href="#">Ground Water</a>
+          <a href="#">Rain Water</a>
+        </div> -->
+        </div>
+         <a href="#"> <img src="images/homepage-logo.png" class="logo1" /></a>
+        </div>
+        <div class="image">
+          <img src="images/NHP_LOGO.png" class="logo2" />
+          <p>
+            Developed & Maintained under<br />
+            National Hydrology Project
+          </p>
+        </div>
+        <div class="middle">
+          <p>Water Available Across States</p>
+        </div>
+        <div class="list">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+            <!-- dropdown -->
+
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                WRIS
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Reservoirs</a>
+                <a href="#">MI Tanks</a>
+                <a href="#">Ground Water</a>
+                <a href="#">Rain Water</a>
+              </div>
+            </div>
+            <li><a href="#">WRMS</a></li>
+
+            <li>
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-unlock-keyhole"></i>&nbsp;Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="body1">
+      <div class="b1">
+        <div class="top_row">
+          <div class="title">
+            <div style="padding-top: 5px" class="rain">
+              <img
+                src="images/rainfall-home-icon.svg"
+                height="23px"
+                width="23px"
+              />
+            <h4 style="margin-left: 10px"><b>Rainfall</b></h4>
+            </div>
+          </div>
+
+          <div class="title">
+            <div class="card-content">
+              <div class="heading-icon">
+                <div style="padding-top: 5px">
+                  <img
+                    src="images/home-reservoir-icon.svg"
+                    height="23px"
+                    width="23px"
+                  />
+                </div>
+                <h4 style="margin-left: 10px"><b>Reservoirs</b></h4>
+              </div>
+              <div class="content">
+                <div style="font-size: 18px">Storage</div>
+                <div style="font-size: 20px">824.51 T.M.C</div>
+                <div>No. of Reservoir : 108</div>
+              </div>
+              <div class="chart-container2">
+                <canvas id="doughtnut1" width="20px" height="20px"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <div class="card-content">
+              <div class="heading-icon">
+                <div style="padding-top: 5px">
+                  <img
+                    src="images/home-mitanks-icon.svg"
+                    height="23px"
+                    width="23px"
+                  />
+                </div>
+                <h4 style="margin-left: 10px">
+                  <b>Minor Irrigation <br> Tanks</b>
+                </h4>
+              </div>
+              <div class="content">
+                <div style="font-size: 18px">Storage</div>
+                <div style="font-size: 20px">150.95 T.M.C</div>
+                <div>52,313 No.of Tanks</div>
+              </div>
+              <div class="chart-container3">
+                <canvas id="doughtnut2" width="20px" height="20px"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom_row">
+          <div class="title">
+            <div class="heading-icon">
+              <div style="padding-top: 5px">
+                <img
+                  src="images/home-groundwater-icon.svg"
+                  height="23px"
+                  width="23px"
+                />
+              </div>
+              <h4 style="margin-left: 10px"><b>Ground Water</b></h4>
+            </div>
+
+            <div class="content">
+              <div style="font-size: 18px">Change Since June 1st</div>
+              <div style="font-size: 20px">0 T.M.C</div>
+              <div>
+                Groundwater level as on <br />
+                August 22 ,2022 :8.36m
+              </div>
+              <div>30 cms depth : 60.19%</div>
+            </div>
+          </div>
+
+          <div class="title">
+            <div class="heading-icon">
+              <div style="padding-top: 5px">
+                <img
+                  src="images/home-soil-moisture-icon.svg"
+                  height="23px"
+                  width="23px"
+                />
+              </div>
+              <h4 style="margin-left: 10px"><b>Soil Moisture</b></h4>
+            </div>
+
+            <div class="content">
+              <div style="font-size: 18px">Available Soil Moisture</div>
+              <div style="font-size: 20px">528.61 T.M.C</div>
+              <div>Available Soil Moisture till</div>
+              <div>30 cms depth : 60.19%</div>
+              <div>100 cms depth : 71.93%</div>
+            </div>
+            <div class="chart-bar">
+              <canvas id="myChart" width="20" height="20"></canvas>
+            </div>
+          </div>
+
+          <div class="title">
+            <div class="heading-icon">
+              <div style="padding-top: 5px">
+                <img
+                  src="images/home-wcs-icon.svg"
+                  height="23px"
+                  width="23px"
+                />
+              </div>
+              <h4 style="margin-left: 10px"><b>WC Structures</b></h4>
+            </div>
+
+            <div class="content">
+              <div style="font-size: 18px">Storge</div>
+              <div style="font-size: 20px">22.64 T.M.C</div>
+              <div>No.of WC Structures</div>
+              <div>18,82,340</div>
+            </div>
+            <div class="chart-container6">
+              <canvas id="doughtnut3" width="20px" height="20px"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="b2"></div>
+    </div>
+
+    <div class="footer">
+      <p>
+        &copy; 2022 APWRD. <br />
+        All Rights Reserved
+      </p>
+      <img src="images/nhp-logo-homepage.png" class="f1" />
+      <img src="images/apwaterblackfinal.png" class="f2" />
+      <img src="images/isro-logo.png" class="f3" />
+      <img src="images/departement-logo.png" class="f4" />
+      <img src="images/footer-logo.png" class="f5" />
+    </div>
+
+    <script>
+      const ctx = document.getElementById("myChart").getContext("2d");
+      const myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["ANKP", "KR", "SKL", "EG", "VSP", "NLR", "NTR", "ASR"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [98, 89, 73, 65, 92, 83, 76, 89],
+              backgroundColor: [
+                "rgb(80,176,81)",
+                "rgb(80,176,81)",
+                "rgb(80,176,81)",
+                "rgb(80,176,81)",
+                "rgb(80,176,81)",
+                "rgb(80,176,81)",
+                "rgb(80,176,81)",
+                "rgb(80,176,81)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(255, 99, 132, 1)",
+                "rgba(255, 99, 132, 1)",
+                "rgba(255, 99, 132, 1)",
+                "rgba(255, 99, 132, 1)",
+                "rgba(255, 99, 132, 1)",
+                "rgba(255, 99, 132, 1)",
+                "rgba(255, 99, 132, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        // options: {
+        //     scales: {
+        //         y: {
+        //             beginAtZero: true
+        //         }
+        //     }
+        // }
+      });
+
+      const rev = document.getElementById("doughtnut1").getContext("2d");
+      const doughnut1 = new Chart(rev, {
+        type: "doughnut",
+        data: {
+          labels: ["Empty", "Filled"],
+          datasets: [
+            {
+              label: "My First Dataset",
+              data: [162 / 10, 838 / 10],
+              backgroundColor: ["#CFD8DC", "#147AD6"],
+              hoverOffset: 3,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: true,
+              labels: {
+                color: "rgb(255, 99, 132)",
+              },
+              position: "bottom",
+            },
+          },
+        },
+      });
+
+      const MIT = document.getElementById("doughtnut2").getContext("2d");
+      const doughnut2 = new Chart(MIT, {
+        type: "doughnut",
+        data: {
+          labels: ["Empty", "Filled"],
+          datasets: [
+            {
+              label: "My First Dataset",
+              data: [484 / 10, 516 / 10],
+              backgroundColor: ["#CFD8DC", "#147AD6"],
+              hoverOffset: 3,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: true,
+              labels: {
+                color: "rgb(255, 99, 132)",
+              },
+              position: "bottom",
+            },
+          },
+        },
+      });
+
+      const wcs = document.getElementById("doughtnut3").getContext("2d");
+      const doughnut3 = new Chart(wcs, {
+        type: "doughnut",
+        data: {
+          labels: ["Empty", "Filled"],
+          datasets: [
+            {
+              label: "My First Dataset",
+              data: [572 / 10, 428 / 10],
+              backgroundColor: ["#CFD8DC", "#147AD6"],
+              hoverOffset: 3,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: true,
+              labels: {
+                color: "rgb(255, 99, 132)",
+              },
+              position: "bottom",
+            },
+          },
+        },
+      });
+
+      // dropdown content for wris
+
+      // function myFunction() {
+      //   console.log("helloeeeeeeeeeeeee.......")
+      //   document.getElementById("myDropdown").classList.toggle("show");
+      // }
+
+      // Close the dropdown if the user clicks outside of it
+      // window.onclick = function (event) {
+      //   if (!event.target.matches(".dropbtn")) {
+      //     var dropdowns = document.getElementsByClassName("dropdown-content");
+      //     var i;
+      //     for (i = 0; i < dropdowns.length; i++) {
+      //       var openDropdown = dropdowns[i];
+      //       if (openDropdown.classList.contains("show")) {
+      //         openDropdown.classList.remove("show");
+      //       }
+      //     }
+      //   }
+      // };
+
+
+      // // this for bar icons
+
+      // function myFunction1() {
+      //   document.getElementById("myDropdown1").classList.toggle("show");
+      // }
+
+      // // Close the dropdown if the user clicks outside of it
+      // window.onclick = function (event) {
+      //   if (!event.target.matches(".dropbtn1")) {
+      //     var dropdowns = document.getElementsByClassName("dropdown-content1");
+      //     var i;
+      //     for (i = 0; i < dropdowns.length; i++) {
+      //       var openDropdown = dropdowns[i];
+      //       if (openDropdown.classList.contains("show")) {
+      //         openDropdown.classList.remove("show");
+      //       }
+      //     }
+      //   }
+      // };
+    </script>
+  </body>
+</html>

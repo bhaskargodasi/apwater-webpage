@@ -1,0 +1,17 @@
+<svg id="home-wcs-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_22" data-name="Group 22" transform="translate(11.914)">
+    <g id="Group_21" data-name="Group 21">
+      <path id="Path_66" data-name="Path 66" d="M166.3,5.718,160.586,0l-5.718,5.718a8.086,8.086,0,1,0,11.435,0Z" transform="translate(-152.5)" fill="#121212"/>
+    </g>
+  </g>
+  <g id="Group_24" data-name="Group 24" transform="translate(0 4.766)">
+    <g id="Group_23" data-name="Group 23">
+      <path id="Path_67" data-name="Path 67" d="M17.458,82.379l-8.6-8.6a1.758,1.758,0,0,0-2.486,2.486l8.6,8.6-1.657,1.657-8.6-8.6a4.089,4.089,0,0,1-1.2-3.017s0-12.148,0-12.148a1.758,1.758,0,1,0-3.516,0V78.813L7.031,90.453v5.781h11.8V85.7A4.677,4.677,0,0,0,17.458,82.379Z" transform="translate(0 -61)" fill="#121212"/>
+    </g>
+  </g>
+  <g id="Group_26" data-name="Group 26" transform="translate(21.172 4.766)">
+    <g id="Group_25" data-name="Group 25">
+      <path id="Path_68" data-name="Path 68" d="M288.07,61a1.758,1.758,0,0,0-1.758,1.758V74.906a4.1,4.1,0,0,1-1.2,3.017l-8.6,8.6-1.657-1.657,8.6-8.6a1.758,1.758,0,1,0-2.486-2.486l-8.6,8.6A4.677,4.677,0,0,0,271,85.7V96.234h11.8V90.453l7.031-11.641V62.758A1.758,1.758,0,0,0,288.07,61Z" transform="translate(-271 -61)" fill="#121212"/>
+    </g>
+  </g>
+</svg>
